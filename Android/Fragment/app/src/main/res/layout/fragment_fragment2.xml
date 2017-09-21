@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40e0d0"
+    tools:context="com.oit.test.fragment.Fragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="26dp" />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:background="#ffffff"
+        android:layout_below="@+id/tv1"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_alignStart="@+id/tv1"
+        android:layout_marginTop="26dp" />
+
+<!--<DatePicker
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8a2be2">
+
+</DatePicker>-->
+</RelativeLayout>

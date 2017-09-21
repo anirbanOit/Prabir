@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008b8b"
+    android:id="@+id/frg1"
+    tools:context="com.oit.test.fragment.Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+
+        android:layout_marginTop="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/ed2"
+        android:layout_alignStart="@+id/ed2" />
+
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/ed1"
+         />
+    <Button
+        android:id="@+id/btn"
+        android:onClick="submit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ed2"
+        android:layout_alignRight="@+id/ed2"
+        android:layout_alignEnd="@+id/ed2"
+        android:layout_marginRight="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginTop="22dp"
+        android:text="Submit"/>
+    <!-- <CalendarView
+         android:background="#00ff7f"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         >
+     </CalendarView>-->
+
+
+</RelativeLayout>

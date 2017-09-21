@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:layout_height="290dp"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+    <EditText
+        android:id="@+id/first_name"
+
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:hint="FirstName"
+        android:background="@drawable/border"
+        android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border"
+            android:hint="LastName"/>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+           >
+            <TextView
+                android:id="@+id/male"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                 android:background="@drawable/border"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:text="Male"/>
+            <TextView
+                android:id="@+id/female"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:text="Female"/>
+        </LinearLayout>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="DOB:"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <EditText
+
+
+                android:id="@+id/text_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:background="@drawable/border"
+                />
+            <ImageView
+                android:onClick="date"
+                android:id="@+id/date_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/border"
+                android:src="@drawable/datepic"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/spn"
+            android:layout_alignStart="@+id/spn"
+            android:layout_below="@+id/linearLayout"
+            android:text="Dept:" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border">
+
+        <Spinner
+
+            android:id="@+id/dept"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/imageView"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_marginBottom="13dp"
+
+            android:paddingLeft="5dp"></Spinner>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img"
+        android:background="@drawable/border"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="add"
+
+        android:background="@drawable/borderround"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+    <Button
+        android:text="preview"
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="getdata"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/borderround"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

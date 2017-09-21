@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3399ff"
+
+    tools:context=".MainActivity" >
+
+
+    <EditText
+        android:id="@+id/edtuser"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#d3ffce"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:ems="10"
+        android:hint="Enter username"
+        android:inputType="text"
+        android:layout_marginTop="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edtpass"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#d3ffce"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/edtuser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!--<requestFocus />-->
+    </EditText>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="#9fe25a"
+        android:text="Login"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/edtpass"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
